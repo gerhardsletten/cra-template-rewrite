@@ -1,0 +1,26 @@
+{
+  "name": "cra-template-rewrite",
+  "version": "1.0.0",
+  "keywords": [
+    "react",
+    "create-react-app",
+    "template"
+  ],
+  "description": "Rewrite template for Create React App.",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gerhardsletten/cra-template-rewrite.git",
+    "directory": "/"
+  },
+  "license": "MIT",
+  "engines": {
+    "node": ">=14"
+  },
+  "bugs": {
+    "url": "https://github.com/gerhardsletten/cra-template-rewrite/issues"
+  },
+  "files": [
+    "template",
+    "template.json"
+  ]
+}

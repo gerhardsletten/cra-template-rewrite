@@ -1,0 +1,40 @@
+{
+  "package": {
+    "dependencies": {
+      "@loadable/babel-plugin": "^5.13.2",
+      "@loadable/component": "^5.15.0",
+      "react-router-dom": "^5.3.0"
+    },
+    "devDependencies": {
+      "customize-cra": "^1.0.0",
+      "eslint-config-prettier": "^8.3.0",
+      "eslint-plugin-prettier": "^3.4.1",
+      "prettier": "^2.4.1",
+      "react-app-rewired": "^2.1.8",
+      "webpack-bundle-analyzer": "^4.4.2"
+    },
+    "scripts": {
+      "start": "react-app-rewired start",
+      "build": "cross-env NODE_ENV=production react-app-rewired build",
+      "analyze": "cross-env ANALYZE=1 react-app-rewired build",
+      "test": "eslint src",
+      "format": "prettier --write \"src/**/*.js\" \"config-overrides.js\""
+    },
+    "prettier": {
+      "semi": false,
+      "singleQuote": true
+    },
+    "eslintConfig": {
+      "plugins": [
+        "prettier"
+      ],
+      "extends": ["react-app", "react-app/jest"],
+      "ignorePatterns": [
+        "build/"
+      ],
+      "rules": {
+        "prettier/prettier": "warn"
+      }
+    }
+  }
+}
