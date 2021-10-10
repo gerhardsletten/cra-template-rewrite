@@ -15,8 +15,8 @@
     },
     "scripts": {
       "start": "react-app-rewired start",
-      "build": "cross-env NODE_ENV=production react-app-rewired build",
-      "analyze": "cross-env ANALYZE=1 react-app-rewired build",
+      "build": "NODE_ENV=production react-app-rewired build",
+      "analyze": "ANALYZE=1 react-app-rewired build",
       "test": "eslint src",
       "format": "prettier --write \"src/**/*.js\" \"config-overrides.js\""
     },
