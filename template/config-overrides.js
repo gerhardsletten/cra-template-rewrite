@@ -13,9 +13,7 @@ const resolveModules = () => (config) => {
 }
 
 module.exports = override(
-  ...addBabelPlugins(
-    '@loadable/babel-plugin',
-  ),
+  ...addBabelPlugins('@loadable/babel-plugin'),
   resolveModules(),
-  process.env.ANALYZE && addBundleVisualizer(),
+  process.env.ANALYZE && addBundleVisualizer()
 )
